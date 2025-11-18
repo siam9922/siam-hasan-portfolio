@@ -1,0 +1,12 @@
+Stopped Video at: END
+
+.hero{
+  background-size:  cover;
+  background-position: top center;  
+}
+  
+  script.js 
+  bottom of new splide 
+     autoScroll: {
+      speed: 1,
+    },
