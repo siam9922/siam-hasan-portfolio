@@ -202,7 +202,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: -0px 12%;
+    padding: 0 12%;              
     position: fixed;
     top: 0%;
     left: 0%;
@@ -224,22 +224,40 @@ body {
     align-items: center;
 }
 
+
 .menu li {
-    padding: 0px 16px;
+    margin-left: 28px;
 }
 
 .menu li a {
-    font-size: 0.9rem;
-    padding: 8px;
-    color: var(--white);
+    font-size: 1rem;             
+    padding: 8px 0 4px;          
+    color: #e0e0e0;              
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: .6s;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    position: relative;         
+}
+
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
 }
 
 .menu li a:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
+}
+
+.menu li a:hover::after {
+    width: 100%;
 }
 
 #toggle {
@@ -1316,7 +1334,7 @@ body {
     .service_card_info p{
         margin-bottom: 30px;
     }
-    .portfolio content p{
+    .portfolio_content p{
         width: 90%;
     }
     .skill_title h2{
@@ -1429,6 +1447,9 @@ body {
     .blog-wrap{
         grid-template-columns: repeat(2,1fr);
     }
+     .navbar .menu a {
+        font-size: 0.85rem;
+    }
 }
 
 
@@ -1517,6 +1538,7 @@ body {
     .section_title2 h3{
         font-size: 2.5rem;
     }
+    
     .hero {
         background-position: right center;
     }
@@ -1574,6 +1596,9 @@ body {
     .footer_wrap{
         grid-template-columns: repeat(1, 1fr);
     }
+     .menu {
+        text-align: center;
+    }
 }
 
 
@@ -1627,6 +1652,9 @@ body {
     }
     .testimonials_title{
         padding: 0px 12%;
+    }
+     .nav_btn {
+        display: none;
     }
 
 }
