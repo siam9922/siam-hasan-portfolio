@@ -1,0 +1,11 @@
+{
+  "name": "siam-hasan-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Siam Hasan's personal IT support and cloud portfolio",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check assets/js/main.js && node scripts/check.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
